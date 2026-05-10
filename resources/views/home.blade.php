@@ -56,10 +56,10 @@
                     $setting->tiktok ?? null,
                     $setting->twitter ?? null,
                     $setting->linkedin ?? null,
-                ]),
-            ),
+                ])
+            )
         );
-
+        
         $schemaGraph = [
             [
                 '@type' => 'WebSite',
