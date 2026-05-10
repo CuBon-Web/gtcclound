@@ -102,7 +102,7 @@
                         : null,
                     'sameAs' => !empty($sameAs) ? $sameAs : null,
                 ],
-                $removeEmpty,
+                $removeEmpty
             ),
             [
                 '@type' => 'BreadcrumbList',
@@ -140,7 +140,7 @@
                         '@id' => $currentUrl . '#breadcrumb',
                     ],
                 ],
-                $removeEmpty,
+                $removeEmpty
             ),
         ];
     @endphp
