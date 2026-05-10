@@ -16,7 +16,7 @@
                 <a href="#">Dịch vụ</a>
                 <ul class="sub-menu">
                     @foreach ($servicehome as $item)
-                        <li><a href="{{route('serviceList',['slug'=>$item->slug])}}">{{$item->name}}</a></li>
+                        <li><a href="{{route('serviceList',['slug'=>$item->slug])}}">{{languageName($item->name)}}</a></li>
                     @endforeach
                 </ul>
              </li>
@@ -30,7 +30,7 @@
             </li>
              @foreach ($blogCate as $item)
                  
-                <li><a href="{{route('listCateBlog',['slug'=>$item->slug])}}">{{$item->name}}</a></li>
+                <li><a href="{{route('listCateBlog',['slug'=>$item->slug])}}">{{languageName($item->name)}}</a></li>
             @endforeach
              <li><a href="{{route('lienHe')}}">Liên hệ</a></li>
           </ul>
